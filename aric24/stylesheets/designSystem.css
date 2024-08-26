@@ -1,0 +1,147 @@
+/* Colors */
+:root {
+    --color-accent: #0880ae;
+    --color-primary: #2c2738;
+    --color-primary-darker: #183b56;
+    --color-secondary: #756f86;
+    --color-muted: #7c9cbf;
+    --color-tint: #ebf4f8;
+    --color-shade: #dbe2ea;
+    --color-bright: #ffffff;
+    --color-shadow: #2c273814;
+}
+
+/* Character Styles */
+.heading1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-primary);
+}
+.heading2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-primary);
+}
+.heading3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-primary);
+}
+.heading4 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-primary);
+}
+.paragraphPrimarySemibold {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-primary);
+}
+.paragraphPrimary {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-primary);
+}
+.paragraphPrimaryItalics {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-primary);
+    font-style: italic;
+}
+.paragraphSecondarySemibold {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-secondary);
+}
+.paragraphSecondary {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-secondary);
+}
+.paragraphSecondaryItalics {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-secondary);
+    font-style: italic;
+}
+.btnText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-tint);
+}
+.footerText {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-tint);
+}
+.tagText {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-tint);
+}
+@media screen and (max-width: 800px) {
+    .heading1 {
+        font-size: 3rem;
+    }
+    .heading2 {
+        font-size: 2.5rem;
+    }
+    .heading3 {
+        font-size: 2rem;
+    }
+    .heading4 {
+        font-size: 1.5rem;
+    }
+    .paragraphPrimarySemibold {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimary {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimaryItalics {
+        font-size: 1.25rem;
+    }
+    .paragraphSecondarySemibold {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .heading1 {
+        font-size: 2.5rem;
+    }
+    .heading2 {
+        font-size: 2rem;
+    }
+    .heading3 {
+        font-size: 1.5rem;
+    }
+    .heading4 {
+        font-size: 1.5rem;
+    }
+    .btnText {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimarySemibold {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimary {
+        font-size: 1.25rem;
+    }
+    .paragraphPrimaryItalics {
+        font-size: 1.25rem;
+    }
+    .paragraphSecondarySemibold {
+        font-size: 1.25rem;
+    }
+}

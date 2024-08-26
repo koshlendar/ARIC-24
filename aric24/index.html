@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;350;400;420;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- For MUI Icons -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0"
+        />
+
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./stylesheets/reset.css" />
+        <link rel="stylesheet" href="./stylesheets/pageSetup.css" />
+        <link rel="stylesheet" href="./stylesheets/designSystem.css" />
+        <link rel="stylesheet" href="./stylesheets/components.css" />
+        <link rel="stylesheet" href="./stylesheets/navbar.css" />
+        <link rel="stylesheet" href="./stylesheets/style.css" />
+
+        <!-- Script -->
+        <script defer src="./script.js"></script>
+
+        <!-- Title -->
+        <title>ARIC'24</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <div>
+                    <a href="index.html" class="navbarLogo">
+                        <img src="./allAssets/Images/logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <!-- for screen size >900 -->
+                <div class="navOptions paragraphSecondarySemibold">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#aboutARIC">About ARIC'24</a>
+                        </li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#committee">Organising Committee</a></li>
+                        <li><a href="#aboutIIITM">About IIITM</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                    <button class="btn btnText navButton">Register</button>
+                </a>
+
+                <!-- for screen size <900 -->
+                <div class="menu">
+                    <span class="material-symbols-rounded menuIcon" onclick="toggleNavOptions2()"> menu </span>
+                    <div class="navOptions2 paragraphSecondarySemibold">
+                        <span class="material-symbols-rounded menuCloseIcon" onclick="toggleNavOptions2()">
+                            close
+                        </span>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="toggleNavOptions2()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#aboutARIC" onclick="toggleNavOptions2()">About ARIC'24</a>
+                            </li>
+                            <li>
+                                <a href="#speakers" onclick="toggleNavOptions2()">Speakers</a>
+                            </li>
+                            <li>
+                                <a href="#committee" onclick="toggleNavOptions2()">Organising Committee</a>
+                            </li>
+                            <li>
+                                <a href="#aboutIIITM" onclick="toggleNavOptions2()">About IIITM</a>
+                            </li>
+                            <li>
+                                <a href="#contactUs" onclick="toggleNavOptions2()">Contact Us</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://forms.gle/PNM3RCd8CZ4vjv8C9"
+                                    target="_blank"
+                                    onclick="toggleNavOptions2()"
+                                >
+                                    Register
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="division heroSection">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Illustrations/heroIllustration.svg" alt="Group of persons exchanging ideas" />
+                </div>
+                <div class="textSubsection">
+                    <h1 class="heading1">Atal Research and Incubation Conclave'24</h1>
+                    <h2 class="paragraphPrimaryItalics">
+                        Sponsored by TIDE 2.0 Technology Innovation and Incubation Center, ABV-IIITM Gwalior
+                        <br />
+                        Organised by Atal Bihari Vajpayee Indian Institute of Information Technology & Management
+                        (ABV-IIITM) Gwalior
+                    </h2>
+                    <div class="conferenceDate heading4">
+                        <span class="material-symbols-rounded"> event </span>
+                        <p>08-09 November 2024</p>
+                    </div>
+                    <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                        <button class="btn btnText">Register</button>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <!-- Speakers -->
+            <section class="division speakers" id="speakers">
+                <div class="infoTitle">
+                    <span class="tag tagText"></span>
+                    <h2 class="heading2">Probable Speakers</h2>
+                </div>
+              <h4 class="heading1">The Details will be updated soon....</h4>
+<!--
+                <div class="cardContainer">
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Amit Malviya.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Amit Malviya</h6>
+                        <p class="cardDescription paragraphPrimary">National IT Head, BJP</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Anil Bhardwaj.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. Anil Bhardwaj</h6>
+                        <p class="cardDescription paragraphPrimary">Director PRL</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Vinay Thakur.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Vinay Thakur</h6>
+                        <p class="cardDescription paragraphPrimary">MD NICSI</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Abhishek Singh.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Abhishek Singh</h6>
+                        <p class="cardDescription paragraphPrimary">CEO, MyGov</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Prof. Anil K Gupta.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. Anil K Gupta</h6>
+                        <p class="cardDescription paragraphPrimary">Ex Chairman NIF</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Dr. N. P. Rajiv.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr. N. P. Rajiv</h6>
+                        <p class="cardDescription paragraphPrimary">Vice Chair, NIF</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Anil Kothari.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Anil Kothari</h6>
+                        <p class="cardDescription paragraphPrimary">DG. MPCST</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Prof. Wada.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. Wada</h6>
+                        <p class="cardDescription paragraphPrimary">Rhykus Univ. Japan</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Geert. R.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Geert. R</h6>
+                        <p class="cardDescription paragraphPrimary">Belgium Indian Relations</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/A S Rao.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">A S Rao</h6>
+                        <p class="cardDescription paragraphPrimary">President, India Innovators Asso</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Dr. Preet Yadav.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr. Preet Yadav</h6>
+                        <p class="cardDescription paragraphPrimary">NXP</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Dr. Arvind Shrivastava.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr. Arvind Shrivastava</h6>
+                        <p class="cardDescription paragraphPrimary">AMD</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Dr. Ajay Garg.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr. Ajay Garg</h6>
+                        <p class="cardDescription paragraphPrimary">Ex Director, TIDE, MeiTy</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Gaurav Goyal.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Gaurav Goyal</h6>
+                        <p class="cardDescription paragraphPrimary">MSME, Bhopal</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Dr. B. R. Srivastava.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr. B. R. Srivastava</h6>
+                        <p class="cardDescription paragraphPrimary">Director, cancer research India</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Anurudh P Singh.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Anurudh P Singh</h6>
+                        <p class="cardDescription paragraphPrimary">IT Convenor, BJP Kisan Morcha</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Prof. Santosh.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. Santosh</h6>
+                        <p class="cardDescription paragraphPrimary">IIT Indore</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Sandip Patil.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Sandip Patil</h6>
+                        <p class="cardDescription paragraphPrimary">CEO, ESPIN</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Abhay Panjiyar.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Abhay Panjiyar</h6>
+                        <p class="cardDescription paragraphPrimary">Dir Tech, ZERONE</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Narendra Sen.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Narendra Sen</h6>
+                        <p class="cardDescription paragraphPrimary">Cofounder SWAHA</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Nitin Kale.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Nitin Kale</h6>
+                        <p class="cardDescription paragraphPrimary">Cofounder Nano Sniff</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Prof. Nand Gopal Sahoo.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. Nand Gopal Sahoo</h6>
+                        <p class="cardDescription paragraphPrimary">Kumaun University, Nainita</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Mrs. Cheshta Sharma.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Mrs. Cheshta Sharma</h6>
+                        <p class="cardDescription paragraphPrimary">Director, Indian Institute of Patent And Trademark</p>
+                    </div>
+
+                    <div class="card speaker">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Speakers/Prof. K. K. Sirohi.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof. K. K. Sirohi</h6>
+                        <p class="cardDescription paragraphPrimary">Professor of Practice, IIT Delhi</p>
+                    </div>
+
+                    <div class="card" id="showAll">
+                        <div class="cardImg">
+                            <span class="material-symbols-rounded">
+                                expand_more
+                            </span>
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Show All</h6>
+                    </div>
+
+                    <div class="card hide" id="showLess">
+                        <div class="cardImg">
+                            <span class="material-symbols-rounded">
+                                expand_less
+                            </span>
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Show Less</h6>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- About ARIC'22 -->
+            <section class="division aboutARIC" id="aboutARIC">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Images/aboutARIC.JPG" alt="persons sitting in conference room" />
+                </div>
+                <div class="textSubsection">
+                    <h2 class="heading1">About ARIC'24</h2>
+                    <p class="paragraphPrimary">
+                        Atal Bihari Vajpayee-Indian Institute of Information Technology and Management Gwalior
+                        (ABV-IIITM Gwalior) is organizing “Atal Research and Incubation Conclave (ARIC-2024)” under the
+                        visionary guidance of our Honorable Director Prof. S. N. Singh. The third edition of ARIC-2024
+                        will be organized during November 08-09, 2024. The conclave aims to facilitate interaction
+                        between policy advisors, corporate leaders, policy makers, entrepreneurs, and academicians in
+                        order to support the discussion amongst the Institute's students, faculties, and experts. The
+                        event will serve as a potential set - up for cultivating the engineering minds toward research,
+                        innovation, and entrepreneurship. It aims to bring the faculty's and students' integrity toward
+                        both industries and academia in order to address the difficulties in academic research, the
+                        concerns of the entire student body, and the needs of aspiring entrepreneurs across the nation.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Objectives -->
+            <section class="division objectives">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'24</span>
+                    <h2 class="heading2">Objectives</h2>
+                    <p class="paragraphPrimary">
+                        The prime objective of the conclave is to bring together the students, faculties, and
+                        researchers to the wide spectrum of Science, Technology and Engineering fields
+                    </p>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/handshake.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Meet Prominent Personalities</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Converse with academics, researchers, and technologists from prestigious Indian and
+                            international organizations
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/fileSearching.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Explore Ongoing Research</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Opportunity for individuals to learn about the ongoing research being done at various
+                            institutions across the nation.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/chatBubble.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Discussion New Projects</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Platform for discussing new projects and collaborations as well as a place for discussing
+                            scientific ideas
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/interactWithExperts.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Interact With Experts</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Interactions of students with various research experts through the poster presentation,
+                            exhibition, and conversations
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Illustrations/objectives/projectFunding.png" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Project Funding Oppotunity</h6>
+                        <p class="cardDescription paragraphPrimary">Project Funding Oppotunity</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline -->
+            <!--
+            <section class="division timeline">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'24</span>
+                    <h2 class="heading2">Timeline</h2>
+                    <p class="paragraphPrimary">
+                        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque soluta iure obcaecati
+                        officiis quaerat autem dolores sint accusantium, animi optio laborum, repellat molestiae
+                        blanditiis labore eaque fugit incidunt voluptatem! -->
+                    </p>
+                </div>
+            
+
+              <!-- <div class="timelineContainer">
+                    <img src="./allAssets/timeline.svg" alt="" />
+                </div>
+            </section> -->
+        
+
+            <!-- Registration -->
+            <section class="division registration">
+                <div class="infoTitle">
+                    <span class="tag tagText">About ARIC'24</span>
+                    <h2 class="heading2">Registration</h2>
+                    <p class="paragraphPrimary">Registrations are now open! Register early.</p>
+                </div>
+
+                <div class="contentGrid">
+                    <div class="gridItem gridItem1">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> how_to_reg </span>
+                            <span class="paragraphPrimarySemibold"> Eligibility </span>
+                        </div>
+                        <p class="paragraphPrimary">
+                            Participation in this workshop is open to the faculty members/PhD Scholars/PG Students of
+                            ABV-IIITM Gwalior. The people from industries/start-up can also participate in the event.
+                        </p>
+                        <ul class="paragraphPrimary">
+                            <li>Professionals from Industries</li>
+                            <li>Students of PG / PhD Program</li>
+                            <li>Faculties from Engineering Institutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="gridItem gridItem2">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> apartment </span>
+                            <span class="paragraphPrimarySemibold"> Accommodation. Food and Beverages </span>
+                        </div>
+                        <p class="paragraphPrimary">To be updated soon.</p>
+                    </div>
+
+                    <div class="gridItem gridItem3">
+                        <div class="gridItemTitle">
+                            <span class="material-symbols-rounded"> currency_rupee </span>
+                            <span class="paragraphPrimarySemibold"> Registration Charges </span>
+                        </div>
+                        <p class="paragraphPrimary">There are no registration charges to attend the program.</p>
+                    </div>
+                </div>
+
+                <a href="https://forms.gle/PNM3RCd8CZ4vjv8C9" target="_blank">
+                    <button class="btn btnText navButton">Register</button>
+                </a>
+            </section>
+
+            <!-- Organising Committee -->
+            <section class="division committee" id="committee">
+                <div class="infoTitle">
+                    <h2 class="heading1">Organising Committee</h2>
+                    <p class="paragraphPrimary">
+                        <!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At. -->
+                    </p>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Prof.-Sri-Niwas-Singh.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof S N Singh</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Patron <br />
+                            Director, ABV-IIITM Gwalior
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Anurag.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Prof Anurag Shrivastava</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Program Advisor <br />
+                            Dean Alumini and External Relations
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/Manoj Dash.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Manoj Dash</h6>
+                        <p class="cardDescription paragraphPrimary">
+                            Program Coordinator <br />
+                            Faulty Coordinator, TIIC
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/kapil kant.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Kapil Kant</h6>
+                        <p class="cardDescription paragraphPrimary">Organizing Member</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/veena anand.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Veena Anand</h6>
+                        <p class="cardDescription paragraphPrimary">Organizing Member</p>
+                    </div>
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="./allAssets/Images/Committee/gaurav sharma.jpg" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Dr Gaurav Sharma</h6>
+                        <p class="cardDescription paragraphPrimary">Organizing Member</p>
+                    </div>
+                    <div class="card">
+                        <div class="cardImg">
+                            <img src="#" alt="" />
+                        </div>
+                        <h6 class="cardTitle paragraphPrimarySemibold">Mr. Vishambhar Jhakar</h6>
+                        <p class="cardDescription paragraphPrimary">Organizing Member</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About IIITM -->
+            <section class="division aboutIIITM" id="aboutIIITM">
+                <div class="imageSubsection">
+                    <img src="./allAssets/Images/aboutIIITM.png" alt="Photo of ABV IIITM Main Building" />
+                </div>
+
+                <div class="textSubsection">
+                    <h2 class="heading1">About ABV IIITM</h2>
+
+                    <p class="paragraphPrimary">
+                        Atal Bihari Vajpayee-Indian Institute of Information Technology and Management Gwalior
+                        (ABV-IIITM Gwalior) is an apex Information Technology (IT) and Management Institute, established
+                        by the Government of India. ABV-IIITM Gwalior has been declared an Institute of National
+                        importance. The Institute strives to become a world-class Institution which endeavors to carve
+                        young minds through teaching and research and develop them as tomorrow's leaders. The
+                        Institute's mandate is to create Information Technology enabled Management solutions for nation
+                        building. The Institute offers various programmes at UG/PG and Doctoral level. The Institute has
+                        established research collaborations with various Universities in USA, UK, France, Denmark, and
+                        Japan. The Institute has also developed industrial linkages with various research labs and
+                        industries. The students of the Institute are publishing their research work in various
+                        national/ international conferences and journals of repute.
+                    </p>
+
+                    <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank">
+                        <button class="btn btnText">Visit Website</button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact Us -->
+            <section class="division contactUs" id="contactUs">
+                <div class="imageSubsection">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14313.504679122303!2d78.1741388!3d26.2494521!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf834069adc0c9b89!2sAtal%20Bihari%20Vajpayee%20Indian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sin!4v1667745800896!5m2!1sen!2sin"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+
+                <div class="textSubsection">
+                    <h2 class="heading1">Get In Touch</h2>
+
+                    <p class="paragraphPrimary">
+                        Any questions? Feel free to reach out to us. Drop an email at any of the following mails or call
+                        us at the given numbers.
+                        <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut doloribus officiis vero et
+                        reprehenderit! Itaque obcaecati deserunt tenetur modi quam. -->
+                    </p>
+
+                    <h6 class="paragraphPrimarySemibold">Program Advisor</h6>
+                    <p class="paragraphPrimary">
+                        Prof. Anurag Srivastava <br />
+                        Dean of Alumni and External Relations, ABV-IIITM Gwalior<br />
+                        Email: anurags@iiitm.ac.in | daer@iiitm.ac.in
+                    </p>
+                    <h6 class="paragraphPrimarySemibold">Program Coordinators</h6>
+                    <p class="paragraphPrimary">
+                        Dr. Manoj Kumar Dash <br />
+                        +91-9826189049, +91-9981380256 <br />
+                        Email: aric@iiitm.ac.in | tiic@iiitm.ac.in
+                    </p>
+
+                    <div class="social">
+                        <a href="https://www.iiitm.ac.in/index.php/en/" target="_blank">
+                            <img src="./allAssets/icons/websiteLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/iiitmgwaliorofficial" target="_blank">
+                            <img src="./allAssets/icons/instagramLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://twitter.com/iiitm" target="_blank">
+                            <img src="./allAssets/icons/twitterLogoPrimary.svg" alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/iiitm/" target="_blank">
+                            <img src="./allAssets/icons/facebookLogoPrimary.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="division footer">
+            <p class="footerText">&copy; 2024 ABV-IIITM Gwalior. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

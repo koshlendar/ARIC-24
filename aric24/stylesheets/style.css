@@ -1,0 +1,170 @@
+/* Hero Section */
+.heroSection {
+    margin-top: 8rem;
+    flex-direction: row-reverse;
+}
+.heroSection > .textSubsection > h1 {
+    margin-bottom: 2rem;
+}
+.heroSection > .textSubsection > h2 {
+    margin-bottom: 4rem;
+}
+.conferenceDate {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8rem;
+}
+@media screen and (max-width: 600px) {
+    .heroSection {
+        margin-top: 6rem;
+    }
+    .conferenceDate {
+        margin-bottom: 4rem;
+    }
+}
+
+/* Speakers */
+.speakers {
+    flex-direction: column;
+}
+#showAll > .cardImg,
+#showLess > .cardImg {
+    display: flex;
+    justify-content: center;
+}
+#showAll > .cardImg > span,
+#showLess > .cardImg > span {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+.hide {
+    display: none;
+}
+
+/* About ARIC */
+.aboutARIC > .textSubsection > h2 {
+    margin-bottom: 4rem;
+}
+@media screen and (max-width: 600px) {
+    .aboutARIC > .textSubsection > h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Objectives */
+
+
+/* Timline */
+.timeline {
+    flex-direction: row-reverse;
+}
+.timelineContainer {
+    width: 100%;
+    max-width: 1500px;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+.timelineContainer > img {
+    max-height: 24rem;
+}
+
+/* Retgistration */
+.registration> .contentGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    margin: 2rem 0;;
+}
+.gridItem {
+    padding: 1rem;
+    min-width: 20rem;
+    max-width: 50rem;
+}
+.gridItem>.gridItemTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.gridItem>p {
+    margin-left: 3.5rem;
+}
+.gridItem1 {
+    grid-row: 1 / 3;
+}
+.gridItem1>ul {
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+    list-style-type: disc;
+}
+@media screen and (max-width: 600px) {
+    .registration> .contentGrid {
+        grid-template-columns: auto;
+    }
+    .gridItem1 {
+        grid-row: 1;
+    }
+}
+
+/* Organising Committee */
+.committee {
+    flex-direction: column;
+}
+
+/* About IIITM */
+.aboutIIITM {
+    flex-direction: row-reverse;
+}
+.aboutIIITM > .textSubsection > h2 {
+    margin-bottom: 4rem;
+}
+.aboutIIITM > .textSubsection > p {
+    margin-bottom: 6rem;
+}
+@media screen and (max-width: 600px) {
+    .aboutIIITM > .textSubsection > h2 {
+        margin-bottom: 2rem;
+    }
+    .aboutIIITM > .textSubsection > p {
+        margin-bottom: 4rem;
+    }
+}
+
+/* Get In Touch */
+.contactUs > .textSubsection > h2 {
+    margin-bottom: 4rem;
+}
+.contactUs > .textSubsection > p {
+    margin-bottom: 2rem;
+}
+.contactUs > .imageSubsection > iframe {
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .contactUs > .imageSubsection > iframe {
+        max-height: 30rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contactUs > .textSubsection > h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-accent);
+    padding: 2rem 6rem;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 2rem;
+    }
+}

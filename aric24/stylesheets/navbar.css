@@ -1,0 +1,112 @@
+/* Navbar properties */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: var(--color-bright);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 2rem 6rem;
+}
+.navbarShadow {
+    box-shadow: 0px 16px 56px var(--color-shadow);
+}
+.navOptions ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.navOptions a:link,
+.navOptions a:visited,
+.navOptions2 a:link,
+.navOptions2 a:visited {
+    /* text-decoration: none; */
+    /* color: var(--color-secondary); */
+    color: var(--color-primary-darker);
+}
+.navOptions a:hover,
+.navOptions a:active,
+.navOptions2 a:hover,
+.navOptions2 a:active {
+    color: var(--color-primary);
+}
+.navbarLogo img {
+    height: 4rem;
+}
+.menuIcon {
+    display: block;
+    font-size: 4rem;
+    color: var(--color-accent);
+}
+.menuIcon:hover {
+    cursor: pointer;
+}
+.menuCloseIcon {
+    font-size: 4rem;
+    color: var(--color-accent);
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+.menuCloseIcon:hover {
+    cursor: pointer;
+}
+.navOptions2 {
+    opacity: 0;
+    position: fixed;
+    height: 100vh;
+    width: 00vw;
+    top: 0;
+    right: 0;
+    background-color: var(--color-bright);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.navOptions2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.navOptions2Visible {
+    opacity: 1;
+    width: 100vw;
+}
+@media screen and (min-width: 1060px) {
+    .menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .navbar {
+        padding: 2rem 2rem;
+    }
+    .navOptions,
+    .navButton {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    @media screen and (max-width: 600px) {
+        .navbar {
+            padding: 2rem 1rem;
+        }
+        .navbarLogo img,
+        .menuIcon {
+            height: 3rem;
+        }
+        .menuCloseIcon {
+            right: 1rem;
+            height: 3rem;
+        }
+
+    }
+}
